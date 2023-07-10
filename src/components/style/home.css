@@ -1,0 +1,100 @@
+.mainDiv {
+  height: 100vh;
+}
+
+.main {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main h1 {
+  color: #146c94;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 0 rgb(255, 255, 255);
+}
+
+.main .roller {
+  height: 6rem;
+  line-height: 6rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lastRoller {
+  font-size: 2.5rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: rgb(6, 34, 59);
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 4s infinite;
+  text-shadow: 2px 2px 0 rgb(0, 0, 0);
+  color: white;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -6rem;
+  }
+  50% {
+    top: -12rem;
+  }
+  72.5% {
+    top: -18rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .main .roller {
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  #lastRoller {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mobile 4s infinite;
+  }
+
+  @keyframes slide-mobile {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -3rem;
+    }
+    50% {
+      top: -6rem;
+    }
+    72.5% {
+      top: -9rem;
+    }
+  }
+}
