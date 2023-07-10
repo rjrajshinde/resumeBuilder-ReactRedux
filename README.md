@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Resume Builder
 
 App is in Development Mode💻
 
